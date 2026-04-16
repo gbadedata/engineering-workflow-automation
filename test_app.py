@@ -47,3 +47,8 @@ def test_reverse_single_char(client):
 def test_sum_with_missing_keys_defaults_to_zero(client):
     res = client.post('/sum', json={})
     assert res.get_json()["result"] == 0
+
+
+def test_reverse_numeric_string(client):
+    res = client.post('/reverse-string', json={"text": "12345"})
+    assert res.get_json()["result"] == "54321"
