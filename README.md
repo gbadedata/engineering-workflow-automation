@@ -36,6 +36,32 @@ The simplicity is intentional. The value of this project lies in the workflow, n
 
 ---
 
+## Repository Structure
+
+```text
+engineering-workflow-automation/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── app.py
+├── test_app.py
+├── requirements.txt
+├── README.md
+├── GETTING_STARTED.md
+├── CONTRIBUTING.md
+├── evidence/
+│   └── screenshots/
+│       ├── 01-github-actions-failed-build.png
+│       ├── 02-github-actions-success-build.png
+│       ├── 03-github-actions-success-build-2.png
+│       ├── 04-pr-open-with-checks.png
+│       ├── 05-pr-checks-passed.png
+│       ├── 06-trello-board-initial.png
+│       ├── 07-trello-002-moved-to-in-progress.png
+│       └── 08-final-trello-board.png
+
+---
+
 ## Engineering Workflow
 
 ### 1. Task Management (Trello)
