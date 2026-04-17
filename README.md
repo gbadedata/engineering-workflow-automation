@@ -20,7 +20,7 @@ This project was designed to:
 - Track work using a Trello board across defined stages
 - Introduce CI checks (linting and testing) before merge
 - Improve onboarding through clear documentation
-- Ensure traceability from task → branch → commit → PR
+- Ensure traceability from task -> branch -> commit -> PR
 
 ---
 
@@ -28,9 +28,9 @@ This project was designed to:
 
 The application is a simple Flask API with three endpoints:
 
-- `GET /health` → returns service status
-- `POST /sum` → sums two numbers
-- `POST /reverse-string` → reverses a string
+- `GET /health` -> returns service status
+- `POST /sum` -> sums two numbers
+- `POST /reverse-string` -> reverses a string
 
 The simplicity is intentional. The value of this project lies in the workflow, not the business logic.
 
@@ -59,6 +59,9 @@ engineering-workflow-automation/
 │       ├── 06-trello-board-initial.png
 │       ├── 07-trello-002-moved-to-in-progress.png
 │       └── 08-final-trello-board.png
+```
+
+This structure reflects the actual implementation and evidence organization.
 
 ---
 
@@ -75,12 +78,12 @@ Work is tracked using a Trello board with the following lists:
 
 Each task is assigned a unique ID:
 
-- TRELLO-001 — Repository setup
-- TRELLO-002 — CI pipeline
-- TRELLO-003 — Additional test coverage
-- TRELLO-004 — Onboarding guide
-- TRELLO-005 — Contributing standards
-- TRELLO-006 — Final documentation and evidence
+- TRELLO-001 - Repository setup
+- TRELLO-002 - CI pipeline
+- TRELLO-003 - Additional test coverage
+- TRELLO-004 - Onboarding guide
+- TRELLO-005 - Contributing standards
+- TRELLO-006 - Final documentation and evidence
 
 Cards move strictly across lists to reflect real progress.
 
@@ -88,8 +91,8 @@ Cards move strictly across lists to reflect real progress.
 
 ### 2. Branching Strategy (Git)
 
-- `main` → stable production branch
-- `feature/TRELLO-###-description` → isolated work
+- `main` -> stable production branch
+- `feature/TRELLO-###-description` -> isolated work
 
 Examples:
 - `feature/TRELLO-002-ci-pipeline`
@@ -124,7 +127,7 @@ GitHub Actions workflow runs on:
 - push
 - pull request
 
-### Steps executed:
+### Steps executed
 
 1. Install dependencies
 2. Run linting (`flake8`)
@@ -132,8 +135,8 @@ GitHub Actions workflow runs on:
 
 ### Behavior
 
-- Lint failure → pipeline stops
-- Test failure → pipeline fails
+- Lint failure -> pipeline stops
+- Test failure -> pipeline fails
 - Only clean code passes
 
 ---
@@ -181,7 +184,7 @@ evidence/screenshots/
 ### Interpretation
 
 The evidence shows:
-- intentional failure → correction → success
+- intentional failure -> correction -> success
 - PR gating with CI checks
 - task progression across Trello stages
 
@@ -191,7 +194,7 @@ The evidence shows:
 
 - Strong traceability across Trello, Git, and PRs
 - CI pipeline correctly enforced quality gates
-- Real failure → fix → validation cycle captured
+- Real failure -> fix -> validation cycle captured
 - Documentation separated clearly by purpose
 - Evidence curated into a clean narrative
 
