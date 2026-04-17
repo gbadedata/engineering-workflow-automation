@@ -77,8 +77,8 @@ GitHub Actions will:
 
 ### Failure Rules
 
-- lint failure → PR blocked
-- test failure → PR blocked
+- lint failure -> PR blocked
+- test failure -> PR blocked
 
 ---
 
